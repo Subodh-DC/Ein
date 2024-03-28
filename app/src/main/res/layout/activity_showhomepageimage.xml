@@ -15,7 +15,7 @@
         android:id="@+id/getimage"
         android:layout_width="match_parent"
         android:layout_height="170dp"
-        app:srcCompat="@drawable/alia" />
+        app:srcCompat="@drawable/rajpal" />
 
     <TextView
         android:textColor="@color/black"

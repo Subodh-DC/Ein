@@ -56,8 +56,8 @@ class MainActivity : AppCompatActivity() {
 
         val imageDetailsList = listOf(
             Model_for_image(R.drawable.lalkila, "Description 1","\"Make each day your masterpiece\""),
-            Model_for_image(R.drawable.rajkumar, "Description 2","\"test2\""),
-            Model_for_image(R.drawable.boman, "Description 3", "\"test3\"")
+            Model_for_image(R.drawable.indiagate, "Description 2","\"test2\""),
+            Model_for_image(R.drawable.tajmahle, "Description 3", "\"test3\"")
 
         )
 
