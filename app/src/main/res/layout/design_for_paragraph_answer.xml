@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/design_for_paragraph"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_margin="15dp"
+        android:scaleType="centerCrop"
+        android:id="@+id/paragraph_answer_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/amitabh" />
+
+    <TextView
+        android:layout_margin="15dp"
+        android:textSize="15sp"
+        android:id="@+id/paragraph_answer_text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <TextView
+        android:layout_margin="15dp"
+        android:textSize="15sp"
+        android:id="@+id/paragraph_answer_text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+</LinearLayout>
