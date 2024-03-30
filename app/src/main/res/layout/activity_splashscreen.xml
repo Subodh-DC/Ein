@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    android:orientation="vertical"
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -11,15 +10,15 @@
     tools:context=".splashscreen">
 
     <ImageView
-        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="150dp"
         android:id="@+id/simage"
         android:layout_width="115dp"
         android:layout_height="99dp"
-        android:layout_marginTop="112dp"
+        android:src="@drawable/eins"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        android:src="@drawable/eins">
+        app:layout_constraintTop_toTopOf="parent">
 
     </ImageView>
 
@@ -30,17 +29,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="92dp"
+        android:layout_marginBottom="100dp"
         android:text="Your Gateway to Knowledge!"
         android:textColor="@color/white"
         android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/simage"
-        app:layout_constraintVertical_bias="0.907">
+        app:layout_constraintStart_toStartOf="parent">
 
     </TextView>
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

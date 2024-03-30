@@ -87,10 +87,6 @@ class miniactivity : AppCompatActivity() {
             array.add(Model_for_minicat("Trick Economics","Micro Economics",R.drawable.micro_eco))
             array.add(Model_for_minicat("Trick Economics","Macro Economics",R.drawable.macro_eco))
         }
-
-
-        {
-
-        }
+        
     }
 }
