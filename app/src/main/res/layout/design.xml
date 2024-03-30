@@ -25,7 +25,7 @@
                 <ImageView
                     android:id="@+id/catimage"
                     android:layout_width="match_parent"
-                    android:layout_height="170dp"
+                    android:layout_height="180dp"
                     android:scaleType="centerCrop"
                     android:src="@drawable/rajpal"
                     app:layout_constraintEnd_toEndOf="parent"
