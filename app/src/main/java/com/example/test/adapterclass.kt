@@ -32,42 +32,42 @@ class adapterclass(val context: Context,val arrayList: ArrayList<ModelClass>):Re
 
             if (arrayList[position].homecatacory=="Paragraphs"){
                 if (position==0){
-                    val intent = Intent(context, miniactivity::class.java)
+                    val intent = Intent(context, topics::class.java)
                     intent.putExtra("data", "Paragraphs History")
                     context.startActivity(intent)
                 }
 
                 else if (position==1){
-                    val intent = Intent(context, miniactivity::class.java)
+                    val intent = Intent(context, topics::class.java)
                     intent.putExtra("data", "Paragraphs Geography")
                     context.startActivity(intent)
                 }
 
                 else if (position==2){
-                    val intent = Intent(context, Questions::class.java)
+                    val intent = Intent(context, topics::class.java)
                     intent.putExtra("data", "Paragraphs Constitution")
                     context.startActivity(intent)
                 }
 
                 else if (position==3){
-                    val intent = Intent(context, miniactivity::class.java)
+                    val intent = Intent(context, topics::class.java)
                     intent.putExtra("data", "Paragraphs Science")
                     context.startActivity(intent)
                 }
 
                 else if (position==4){
-                    val intent = Intent(context, miniactivity::class.java)
+                    val intent = Intent(context, topics::class.java)
                     intent.putExtra("data", "Paragraphs Economics")
                     context.startActivity(intent)
                 }
                 else if (position==5){
-                    val intent = Intent(context, miniactivity::class.java)
+                    val intent = Intent(context, topics::class.java)
                     intent.putExtra("data", "Paragraphs Computer")
                     context.startActivity(intent)
                 }
 
                 else if (position==6){
-                    val intent = Intent(context, miniactivity::class.java)
+                    val intent = Intent(context, topics::class.java)
                     intent.putExtra("data", "Paragraphs Reasoning")
                     context.startActivity(intent)
                 }
@@ -76,42 +76,42 @@ class adapterclass(val context: Context,val arrayList: ArrayList<ModelClass>):Re
 
             else if (arrayList[position].homecatacory=="Oneline"){
                 if (position==0){
-                    val intent = Intent(context, miniactivity::class.java)
+                    val intent = Intent(context, topics::class.java)
                     intent.putExtra("data", "Oneline History")
                     context.startActivity(intent)
                 }
 
                 else if (position==1){
-                    val intent = Intent(context, miniactivity::class.java)
+                    val intent = Intent(context, topics::class.java)
                     intent.putExtra("data", "Oneline Geography")
                     context.startActivity(intent)
                 }
 
                 else if (position==2){
-                    val intent = Intent(context, Questions::class.java)
+                    val intent = Intent(context, topics::class.java)
                     intent.putExtra("data", "Oneline Constitution")
                     context.startActivity(intent)
                 }
 
                 else if (position==3){
-                    val intent = Intent(context, miniactivity::class.java)
+                    val intent = Intent(context, topics::class.java)
                     intent.putExtra("data", "Oneline Science")
                     context.startActivity(intent)
                 }
 
                 else if (position==4){
-                    val intent = Intent(context, miniactivity::class.java)
+                    val intent = Intent(context, topics::class.java)
                     intent.putExtra("data", "Oneline Economics")
                     context.startActivity(intent)
                 }
                 else if (position==5){
-                    val intent = Intent(context, miniactivity::class.java)
+                    val intent = Intent(context, topics::class.java)
                     intent.putExtra("data", "Oneline Computer")
                     context.startActivity(intent)
                 }
 
                 else if (position==6){
-                    val intent = Intent(context, miniactivity::class.java)
+                    val intent = Intent(context, topics::class.java)
                     intent.putExtra("data", "Oneline Reasoning")
                     context.startActivity(intent)
                 }
@@ -120,42 +120,42 @@ class adapterclass(val context: Context,val arrayList: ArrayList<ModelClass>):Re
 
             else if (arrayList[position].homecatacory=="Quiz"){
                 if (position==0){
-                    val intent = Intent(context, miniactivity::class.java)
+                    val intent = Intent(context, topics::class.java)
                     intent.putExtra("data", "Quiz History")
                     context.startActivity(intent)
                 }
 
                 else if (position==1){
-                    val intent = Intent(context, miniactivity::class.java)
+                    val intent = Intent(context, topics::class.java)
                     intent.putExtra("data", "Quiz Geography")
                     context.startActivity(intent)
                 }
 
                 else if (position==2){
-                    val intent = Intent(context, Questions::class.java)
+                    val intent = Intent(context, topics::class.java)
                     intent.putExtra("data", "Quiz Constitution")
                     context.startActivity(intent)
                 }
 
                 else if (position==3){
-                    val intent = Intent(context, miniactivity::class.java)
+                    val intent = Intent(context, topics::class.java)
                     intent.putExtra("data", "Quiz Science")
                     context.startActivity(intent)
                 }
 
                 else if (position==4){
-                    val intent = Intent(context, miniactivity::class.java)
+                    val intent = Intent(context, topics::class.java)
                     intent.putExtra("data", "Quiz Economics")
                     context.startActivity(intent)
                 }
                 else if (position==5){
-                    val intent = Intent(context, miniactivity::class.java)
+                    val intent = Intent(context, topics::class.java)
                     intent.putExtra("data", "Quiz Computer")
                     context.startActivity(intent)
                 }
 
                 else if (position==6){
-                    val intent = Intent(context, miniactivity::class.java)
+                    val intent = Intent(context, topics::class.java)
                     intent.putExtra("data", "Quiz Reasoning")
                     context.startActivity(intent)
                 }
@@ -164,42 +164,42 @@ class adapterclass(val context: Context,val arrayList: ArrayList<ModelClass>):Re
 
             else if (arrayList[position].homecatacory=="Trick"){
                 if (position==0){
-                    val intent = Intent(context, miniactivity::class.java)
+                    val intent = Intent(context, topics::class.java)
                     intent.putExtra("data", "Trick History")
                     context.startActivity(intent)
                 }
 
                 else if (position==1){
-                    val intent = Intent(context, miniactivity::class.java)
+                    val intent = Intent(context, topics::class.java)
                     intent.putExtra("data", "Trick Geography")
                     context.startActivity(intent)
                 }
 
                 else if (position==2){
-                    val intent = Intent(context, Questions::class.java)
+                    val intent = Intent(context, topics::class.java)
                     intent.putExtra("data", "Trick Constitution")
                     context.startActivity(intent)
                 }
 
                 else if (position==3){
-                    val intent = Intent(context, miniactivity::class.java)
+                    val intent = Intent(context, topics::class.java)
                     intent.putExtra("data", "Trick Science")
                     context.startActivity(intent)
                 }
 
                 else if (position==4){
-                    val intent = Intent(context, miniactivity::class.java)
+                    val intent = Intent(context, topics::class.java)
                     intent.putExtra("data", "Trick Economics")
                     context.startActivity(intent)
                 }
                 else if (position==5){
-                    val intent = Intent(context, miniactivity::class.java)
+                    val intent = Intent(context, topics::class.java)
                     intent.putExtra("data", "Trick Computer")
                     context.startActivity(intent)
                 }
 
                 else if (position==6){
-                    val intent = Intent(context, miniactivity::class.java)
+                    val intent = Intent(context, topics::class.java)
                     intent.putExtra("data", "Trick Reasoning")
                     context.startActivity(intent)
                 }

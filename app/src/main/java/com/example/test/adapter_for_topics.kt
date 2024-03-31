@@ -5,36 +5,32 @@ import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class adapter_for_miniadapter(val context: Context,val arrayList: ArrayList<Model_for_minicat>):RecyclerView.Adapter<adapter_for_miniadapter.myminidata>() {
-    class myminidata(view: View):RecyclerView.ViewHolder(view) {
+class adapter_for_topics(val context: Context,val arrayList: ArrayList<Model_for_topics>):
+    RecyclerView.Adapter<adapter_for_topics.mytopic>() {
+    class mytopic(view: View):RecyclerView.ViewHolder(view) {
 
-        val image=view.findViewById<ImageView>(R.id.miniimage)
-        val text=view.findViewById<TextView>(R.id.minitext)
-        val designLayout: ViewGroup = view.findViewById(R.id.minilayout)
-
+        val number=view.findViewById<TextView>(R.id.topicsnumber)
+        val topics=view.findViewById<TextView>(R.id.topicstext)
+        val topicsdesignLayout: ViewGroup = view.findViewById(R.id.topics_layout)
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): myminidata {
-        return myminidata(
-            LayoutInflater.from(context).inflate(R.layout.minidesign, null, false)
-        )
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): mytopic {
+        return mytopic(LayoutInflater.from(context).inflate(R.layout.design_for_topics, null, false))
     }
 
     override fun getItemCount(): Int {
         return arrayList.size
     }
 
-    override fun onBindViewHolder(holder: myminidata, position: Int) {
+    override fun onBindViewHolder(holder: mytopic, position: Int) {
 
-        holder.image.setImageResource(arrayList[position].img)
-        holder.text.text=arrayList[position].name
+        holder.number.text=arrayList[position].number
+        holder.topics.text=arrayList[position].topic
 
-        holder.designLayout.setOnClickListener{
-
+        holder.topicsdesignLayout.setOnClickListener {
 
             /* val Paragraphs="Paragraphs"
                val Oneline="Oneline"
@@ -44,7 +40,7 @@ class adapter_for_miniadapter(val context: Context,val arrayList: ArrayList<Mode
             // this all data for go to question activity if user click Paragraphs category
             if (arrayList[position].catacory=="Paragraphs History"){
                 if (position==0){
-                    val intent = Intent(context,topics::class.java)
+                    val intent = Intent(context,Questions::class.java)
                     intent.putExtra("minidata", "Paragraphs indian History")
                     context.startActivity(intent)
                 }
@@ -105,18 +101,18 @@ class adapter_for_miniadapter(val context: Context,val arrayList: ArrayList<Mode
                     context.startActivity(intent)
                 }
             }
-          /*  else if (arrayList[position].catacory=="Oneline Economics"){
-                if (position==0){
-                    val intent = Intent(context,Questions::class.java)
-                    intent.putExtra("minidata", "Oneline micro Economics")
-                    context.startActivity(intent)
-                }
-                else if (position==1){
-                    val intent = Intent(context, Questions::class.java)
-                    intent.putExtra("minidata", "Oneline macro Economics")
-                    context.startActivity(intent)
-                }
-            }*/
+            /*  else if (arrayList[position].catacory=="Oneline Economics"){
+                  if (position==0){
+                      val intent = Intent(context,Questions::class.java)
+                      intent.putExtra("minidata", "Oneline micro Economics")
+                      context.startActivity(intent)
+                  }
+                  else if (position==1){
+                      val intent = Intent(context, Questions::class.java)
+                      intent.putExtra("minidata", "Oneline macro Economics")
+                      context.startActivity(intent)
+                  }
+              }*/
 
 
             // this all data for go to question activity if user click Quiz category
@@ -144,18 +140,18 @@ class adapter_for_miniadapter(val context: Context,val arrayList: ArrayList<Mode
                     context.startActivity(intent)
                 }
             }
-           /* else if (arrayList[position].catacory=="Quiz Economics"){
-                if (position==0){
-                    val intent = Intent(context,Questions::class.java)
-                    intent.putExtra("minidata", "Quiz micro Economics")
-                    context.startActivity(intent)
-                }
-                else if (position==1){
-                    val intent = Intent(context, Questions::class.java)
-                    intent.putExtra("minidata", "Quiz macro Economics")
-                    context.startActivity(intent)
-                }
-            }*/
+            /* else if (arrayList[position].catacory=="Quiz Economics"){
+                 if (position==0){
+                     val intent = Intent(context,Questions::class.java)
+                     intent.putExtra("minidata", "Quiz micro Economics")
+                     context.startActivity(intent)
+                 }
+                 else if (position==1){
+                     val intent = Intent(context, Questions::class.java)
+                     intent.putExtra("minidata", "Quiz macro Economics")
+                     context.startActivity(intent)
+                 }
+             }*/
 
 
             // this all data for go to question activity if user click Trick category
@@ -183,20 +179,18 @@ class adapter_for_miniadapter(val context: Context,val arrayList: ArrayList<Mode
                     context.startActivity(intent)
                 }
             }
-           /* else if (arrayList[position].catacory=="Trick Economics"){
-                if (position==0){
-                    val intent = Intent(context,Questions::class.java)
-                    intent.putExtra("minidata", "Trick micro Economics")
-                    context.startActivity(intent)
-                }
-                else if (position==1){
-                    val intent = Intent(context, Questions::class.java)
-                    intent.putExtra("minidata", "Trick macro Economics")
-                    context.startActivity(intent)
-                }
-            }*/
-
-
+            /* else if (arrayList[position].catacory=="Trick Economics"){
+                 if (position==0){
+                     val intent = Intent(context,Questions::class.java)
+                     intent.putExtra("minidata", "Trick micro Economics")
+                     context.startActivity(intent)
+                 }
+                 else if (position==1){
+                     val intent = Intent(context, Questions::class.java)
+                     intent.putExtra("minidata", "Trick macro Economics")
+                     context.startActivity(intent)
+                 }
+             }*/
         }
     }
 }

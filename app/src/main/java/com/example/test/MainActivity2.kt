@@ -11,16 +11,15 @@ import androidx.recyclerview.widget.RecyclerView
 class MainActivity2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
         setContentView(R.layout.activity_main2)
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
+            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
+            insets
+        }
 
         val arrayList= arrayListOf<ModelClass>()
-        /*arrayList.add(ModelClass("Paragraphs",R.drawable.rajpal,"History"))
-        arrayList.add(ModelClass("Paragraphs",R.drawable.lalkila,"Geography"))
-        arrayList.add(ModelClass("Paragraphs",R.drawable.lalkila,"Constitution"))
-        arrayList.add(ModelClass("Paragraphs",R.drawable.indiagate,"Science"))
-        arrayList.add(ModelClass("Paragraphs",R.drawable.indiagate,"Economic"))
-        arrayList.add(ModelClass("Paragraphs",R.drawable.tajmahle,"Computer"))
-        arrayList.add(ModelClass("Paragraphs",R.drawable.tajmahle,"Reasoning"))*/
 
         val adapterclass=adapterclass(this,arrayList)
 
