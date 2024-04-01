@@ -1,4 +1,4 @@
-package com.example.test
+package com.example.test.activity
 
 import android.content.Intent
 import android.os.Bundle
@@ -9,6 +9,8 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.test.modelclass.Model_for_image
+import com.example.test.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -31,25 +33,25 @@ class MainActivity : AppCompatActivity() {
 
 
         button.setOnClickListener {
-            val intent=Intent(this,MainActivity2::class.java)
+            val intent=Intent(this, MainActivity2::class.java)
             intent.putExtra("homepagedata","Paragraphs")
             startActivity(intent)
         }
 
         button1.setOnClickListener {
-            val intent=Intent(this,MainActivity2::class.java)
+            val intent=Intent(this, MainActivity2::class.java)
             intent.putExtra("homepagedata","Oneline")
             startActivity(intent)
         }
 
         button2.setOnClickListener {
-            val intent=Intent(this,MainActivity2::class.java)
+            val intent=Intent(this, MainActivity2::class.java)
             intent.putExtra("homepagedata","Quiz")
             startActivity(intent)
         }
 
         button3.setOnClickListener {
-            val intent=Intent(this,MainActivity2::class.java)
+            val intent=Intent(this, MainActivity2::class.java)
             intent.putExtra("homepagedata","Trick")
             startActivity(intent)
         }
@@ -68,7 +70,7 @@ class MainActivity : AppCompatActivity() {
         val detailsTextView = randomImageDetails.description
 
         imageView.setOnClickListener{
-            val intent=Intent(this,showhomepageimage::class.java)
+            val intent=Intent(this, showhomepageimage::class.java)
             intent.putExtra("text",detailsTextView)
             intent.putExtra("image",image)
             startActivity(intent)

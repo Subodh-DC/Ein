@@ -1,4 +1,4 @@
-package com.example.test
+package com.example.test.adapterclass
 
 import android.content.Context
 import android.content.Intent
@@ -7,6 +7,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.test.R
+import com.example.test.activity.answer
+import com.example.test.modelclass.Modelclass_for_Qustion
 
 class adapterclass_for_Question(val context: Context, val arrayList: ArrayList<Modelclass_for_Qustion>):
     RecyclerView.Adapter<adapterclass_for_Question.data>() {
@@ -37,7 +40,6 @@ class adapterclass_for_Question(val context: Context, val arrayList: ArrayList<M
                 intent.putExtra("question", arrayList[position].question)
                 context.startActivity(intent)
             }
-
             else if (arrayList[position].minidata == "Paragraphs indian History2") {
                 val intent = Intent(context, answer::class.java)
                 intent.putExtra("question", arrayList[position].question)

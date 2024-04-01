@@ -1,4 +1,4 @@
-package com.example.test
+package com.example.test.adapterclass
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -7,6 +7,8 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.test.R
+import com.example.test.modelclass.Modelclass_for_answer
 
 class adapter_for_answer(val context: Context,val arrayList: ArrayList<Modelclass_for_answer>):RecyclerView.Adapter<adapter_for_answer.data>() {
     class data(view: View):RecyclerView.ViewHolder(view) {

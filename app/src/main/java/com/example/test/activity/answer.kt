@@ -1,4 +1,4 @@
-package com.example.test
+package com.example.test.activity
 
 import android.os.Bundle
 import android.widget.ImageView
@@ -7,6 +7,8 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.test.modelclass.Modelclass_for_answer
+import com.example.test.R
 
 class answer : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

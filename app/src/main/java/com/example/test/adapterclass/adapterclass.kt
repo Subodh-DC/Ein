@@ -1,15 +1,16 @@
-package com.example.test
+package com.example.test.adapterclass
 
 import android.content.Context
 import android.content.Intent
-import android.text.Layout
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import kotlinx.coroutines.NonDisposableHandle.parent
+import com.example.test.R
+import com.example.test.activity.topics
+import com.example.test.modelclass.ModelClass
 
 class adapterclass(val context: Context,val arrayList: ArrayList<ModelClass>):RecyclerView.Adapter<adapterclass.mydata>() {
     class mydata(view: View):RecyclerView.ViewHolder(view) {
@@ -19,11 +20,11 @@ class adapterclass(val context: Context,val arrayList: ArrayList<ModelClass>):Re
         val designLayout: ViewGroup = view.findViewById(R.id.design)
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): adapterclass.mydata {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): mydata {
         return mydata(LayoutInflater.from(context).inflate(R.layout.design,null,false))
     }
 
-    override fun onBindViewHolder(holder: adapterclass.mydata, position: Int) {
+    override fun onBindViewHolder(holder: mydata, position: Int) {
 
         holder.image.setImageResource(arrayList[position].image)
         holder.text.text=arrayList[position].text

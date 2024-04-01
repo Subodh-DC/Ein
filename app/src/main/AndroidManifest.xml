@@ -13,29 +13,32 @@
         android:theme="@style/Theme.Test"
         tools:targetApi="31">
         <activity
-            android:name=".topics"
+            android:name=".activity.Questions_for_all"
             android:exported="false" />
         <activity
-            android:name=".showhomepageimage"
+            android:name=".activity.topics"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".activity.showhomepageimage"
+            android:exported="false" />
+        <activity
+            android:name=".activity.MainActivity"
             android:exported="false"
             android:theme="@style/Theme.Test" />
         <activity
-            android:name=".answer"
+            android:name=".activity.answer"
             android:exported="false" />
         <activity
-            android:name=".miniactivity"
+            android:name=".activity.miniactivity"
             android:exported="false" />
         <activity
-            android:name=".Questions"
+            android:name=".activity.Questions"
             android:exported="false" />
         <activity
-            android:name=".MainActivity2"
+            android:name=".activity.MainActivity2"
             android:exported="false" />
         <activity
-            android:name=".splashscreen"
+            android:name=".activity.splashscreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

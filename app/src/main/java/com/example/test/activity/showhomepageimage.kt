@@ -1,28 +1,36 @@
-package com.example.test
+package com.example.test.activity
 
-import android.content.Intent
 import android.os.Bundle
-import android.os.Handler
-import android.os.Looper
+import android.widget.ImageView
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.test.R
 
-class splashscreen : AppCompatActivity() {
+class showhomepageimage : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_splashscreen)
+        setContentView(R.layout.activity_showhomepageimage)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
 
-        Handler(Looper.getMainLooper()).postDelayed({
-            startActivity(Intent(this,MainActivity::class.java))
-            finish()
-        },3000)
+        val image=findViewById<ImageView>(R.id.getimage)
+        val text=findViewById<TextView>(R.id.gettext)
+
+        //get data from home page
+        val imagedata=intent.extras?.getInt("image")
+        val textdata=intent.extras?.getString("text")
+
+        text.text=textdata
+
+        if (imagedata != null) {
+            image.setImageResource(imagedata)
+        }
     }
 }

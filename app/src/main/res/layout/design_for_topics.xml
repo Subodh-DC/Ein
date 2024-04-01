@@ -19,9 +19,19 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_gravity="center"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/topic_science3"
+            android:layout_height="160dp"
             android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/topics_imageview"
+                android:scaleType="centerCrop"
+                android:src="@drawable/topic_science3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
 
             <TextView
                 android:id="@+id/topicsnumber"

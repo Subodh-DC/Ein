@@ -1,4 +1,4 @@
-package com.example.test
+package com.example.test.activity
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
@@ -7,6 +7,9 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.test.modelclass.ModelClass
+import com.example.test.R
+import com.example.test.adapterclass.adapterclass
 
 class MainActivity2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,7 +24,7 @@ class MainActivity2 : AppCompatActivity() {
 
         val arrayList= arrayListOf<ModelClass>()
 
-        val adapterclass=adapterclass(this,arrayList)
+        val adapterclass= adapterclass(this,arrayList)
 
         val recyclerView=findViewById<RecyclerView>(R.id.recyclerview)
 
@@ -42,31 +45,31 @@ class MainActivity2 : AppCompatActivity() {
             arrayList.add(ModelClass("Paragraphs", R.drawable.reasoning, "Reasoning"))
         }
         else if (data=="Oneline"){
-            arrayList.add(ModelClass("Oneline",R.drawable.history,"History"))
-            arrayList.add(ModelClass("Oneline",R.drawable.geography,"Geography"))
-            arrayList.add(ModelClass("Oneline",R.drawable.constitution,"Constitution"))
-            arrayList.add(ModelClass("Oneline",R.drawable.science,"Science"))
-            arrayList.add(ModelClass("Oneline",R.drawable.economy,"Economic"))
-            arrayList.add(ModelClass("Oneline",R.drawable.computer,"Computer"))
-            arrayList.add(ModelClass("Oneline",R.drawable.reasoning,"Reasoning"))
+            arrayList.add(ModelClass("Oneline", R.drawable.history,"History"))
+            arrayList.add(ModelClass("Oneline", R.drawable.geography,"Geography"))
+            arrayList.add(ModelClass("Oneline", R.drawable.constitution,"Constitution"))
+            arrayList.add(ModelClass("Oneline", R.drawable.science,"Science"))
+            arrayList.add(ModelClass("Oneline", R.drawable.economy,"Economic"))
+            arrayList.add(ModelClass("Oneline", R.drawable.computer,"Computer"))
+            arrayList.add(ModelClass("Oneline", R.drawable.reasoning,"Reasoning"))
         }
         else if (data=="Quiz"){
-            arrayList.add(ModelClass("Quiz",R.drawable.history,"History"))
-            arrayList.add(ModelClass("Quiz",R.drawable.geography,"Geography"))
-            arrayList.add(ModelClass("Quiz",R.drawable.constitution,"Constitution"))
-            arrayList.add(ModelClass("Quiz",R.drawable.science,"Science"))
-            arrayList.add(ModelClass("Quiz",R.drawable.economy,"Economic"))
-            arrayList.add(ModelClass("Quiz",R.drawable.computer,"Computer"))
-            arrayList.add(ModelClass("Quiz",R.drawable.reasoning,"Reasoning"))
+            arrayList.add(ModelClass("Quiz", R.drawable.history,"History"))
+            arrayList.add(ModelClass("Quiz", R.drawable.geography,"Geography"))
+            arrayList.add(ModelClass("Quiz", R.drawable.constitution,"Constitution"))
+            arrayList.add(ModelClass("Quiz", R.drawable.science,"Science"))
+            arrayList.add(ModelClass("Quiz", R.drawable.economy,"Economic"))
+            arrayList.add(ModelClass("Quiz", R.drawable.computer,"Computer"))
+            arrayList.add(ModelClass("Quiz", R.drawable.reasoning,"Reasoning"))
         }
         else if (data=="Trick"){
-            arrayList.add(ModelClass("Trick",R.drawable.history,"History"))
-            arrayList.add(ModelClass("Trick",R.drawable.geography,"Geography"))
-            arrayList.add(ModelClass("Trick",R.drawable.constitution,"Constitution"))
-            arrayList.add(ModelClass("Trick",R.drawable.science,"Science"))
-            arrayList.add(ModelClass("Trick",R.drawable.economy,"Economic"))
-            arrayList.add(ModelClass("Trick",R.drawable.computer,"Computer"))
-            arrayList.add(ModelClass("Trick",R.drawable.reasoning,"Reasoning"))
+            arrayList.add(ModelClass("Trick", R.drawable.history,"History"))
+            arrayList.add(ModelClass("Trick", R.drawable.geography,"Geography"))
+            arrayList.add(ModelClass("Trick", R.drawable.constitution,"Constitution"))
+            arrayList.add(ModelClass("Trick", R.drawable.science,"Science"))
+            arrayList.add(ModelClass("Trick", R.drawable.economy,"Economic"))
+            arrayList.add(ModelClass("Trick", R.drawable.computer,"Computer"))
+            arrayList.add(ModelClass("Trick", R.drawable.reasoning,"Reasoning"))
         }
 
     }
