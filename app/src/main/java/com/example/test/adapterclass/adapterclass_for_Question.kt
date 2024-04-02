@@ -9,6 +9,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.test.R
 import com.example.test.activity.answer
+import com.example.test.activity.oneline_answer
 import com.example.test.modelclass.Modelclass_for_Qustion
 
 class adapterclass_for_Question(val context: Context, val arrayList: ArrayList<Modelclass_for_Qustion>):
@@ -90,42 +91,42 @@ class adapterclass_for_Question(val context: Context, val arrayList: ArrayList<M
             //below is Online question
             //indian History
             else if (arrayList[position].minidata == "Oneline indian History1") {
-                val intent = Intent(context, answer::class.java)
+                val intent = Intent(context, oneline_answer::class.java)
                 intent.putExtra("question", arrayList[position].question)
                 context.startActivity(intent)
             }
 
             //world History
             else if (arrayList[position].minidata == "Oneline world History1") {
-                val intent = Intent(context, answer::class.java)
+                val intent = Intent(context, oneline_answer::class.java)
                 intent.putExtra("question", arrayList[position].question)
                 context.startActivity(intent)
             }
 
             //indian Geography
             else if (arrayList[position].minidata == "Oneline indian Geography1") {
-                val intent = Intent(context, answer::class.java)
+                val intent = Intent(context, oneline_answer::class.java)
                 intent.putExtra("question", arrayList[position].question)
                 context.startActivity(intent)
             }
 
             //world Geography
             else if (arrayList[position].minidata == "Oneline world Geography1") {
-                val intent = Intent(context, answer::class.java)
+                val intent = Intent(context, oneline_answer::class.java)
                 intent.putExtra("question", arrayList[position].question)
                 context.startActivity(intent)
             }
 
             //micro Economics
             else if (arrayList[position].minidata == "Oneline micro Economics1") {
-                val intent = Intent(context, answer::class.java)
+                val intent = Intent(context, oneline_answer::class.java)
                 intent.putExtra("question", arrayList[position].question)
                 context.startActivity(intent)
             }
 
             //macro Economics
             else if (arrayList[position].minidata == "Oneline macro Economics1") {
-                val intent = Intent(context, answer::class.java)
+                val intent = Intent(context, oneline_answer::class.java)
                 intent.putExtra("question", arrayList[position].question)
                 context.startActivity(intent)
             }

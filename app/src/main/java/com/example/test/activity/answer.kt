@@ -85,7 +85,7 @@ class answer : AppCompatActivity() {
         }
 
 
-        //Oneline category
+        /*//Oneline category
         //these all question of Oneline indian History
         if (data=="Q1. Oneline indian History"){
             image.setImageResource(R.drawable.amitabh)
@@ -126,7 +126,7 @@ class answer : AppCompatActivity() {
             image.setImageResource(R.drawable.amitabh)
             question.text="$data"
             answer.text="Ans. Oneline macro Economics"
-        }
+        }*/
 
 
         //Quiz category
