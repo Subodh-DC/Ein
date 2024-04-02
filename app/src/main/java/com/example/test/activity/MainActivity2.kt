@@ -36,41 +36,42 @@ class MainActivity2 : AppCompatActivity() {
         val data = intent.extras?.getString("homepagedata")
 
         if (data == "Paragraphs") {
-            arrayList.add(ModelClass("Paragraphs", R.drawable.history, "History"))
-            arrayList.add(ModelClass("Paragraphs", R.drawable.geography, "Geography"))
-            arrayList.add(ModelClass("Paragraphs", R.drawable.constitution, "Constitution"))
-            arrayList.add(ModelClass("Paragraphs", R.drawable.science, "Science"))
-            arrayList.add(ModelClass("Paragraphs", R.drawable.economy, "Economic"))
-            arrayList.add(ModelClass("Paragraphs", R.drawable.computer, "Computer"))
-            arrayList.add(ModelClass("Paragraphs", R.drawable.reasoning, "Reasoning"))
+            arrayList.add(ModelClass("Paragraphs", R.drawable.history, "इतिहास"))
+            arrayList.add(ModelClass("Paragraphs", R.drawable.geography, "भूगोल"))
+            arrayList.add(ModelClass("Paragraphs", R.drawable.constitution, "संविधान"))
+            arrayList.add(ModelClass("Paragraphs", R.drawable.science, "विज्ञान"))
+            arrayList.add(ModelClass("Paragraphs", R.drawable.economy, "आर्थिक"))
+            arrayList.add(ModelClass("Paragraphs", R.drawable.computer, "कंप्यूटर"))
+            arrayList.add(ModelClass("Paragraphs", R.drawable.reasoning, "तर्क"))
         }
         else if (data=="Oneline"){
-            arrayList.add(ModelClass("Oneline", R.drawable.history,"History"))
-            arrayList.add(ModelClass("Oneline", R.drawable.geography,"Geography"))
-            arrayList.add(ModelClass("Oneline", R.drawable.constitution,"Constitution"))
-            arrayList.add(ModelClass("Oneline", R.drawable.science,"Science"))
-            arrayList.add(ModelClass("Oneline", R.drawable.economy,"Economic"))
-            arrayList.add(ModelClass("Oneline", R.drawable.computer,"Computer"))
-            arrayList.add(ModelClass("Oneline", R.drawable.reasoning,"Reasoning"))
+            arrayList.add(ModelClass("Oneline", R.drawable.history,"इतिहास"))
+            arrayList.add(ModelClass("Oneline", R.drawable.geography,"भूगोल"))
+            arrayList.add(ModelClass("Oneline", R.drawable.constitution,"संविधान"))
+            arrayList.add(ModelClass("Oneline", R.drawable.science,"विज्ञान"))
+            arrayList.add(ModelClass("Oneline", R.drawable.economy,"आर्थिक"))
+            arrayList.add(ModelClass("Oneline", R.drawable.computer,"कंप्यूटर"))
+            arrayList.add(ModelClass("Oneline", R.drawable.reasoning,"तर्क"))
         }
         else if (data=="Quiz"){
-            arrayList.add(ModelClass("Quiz", R.drawable.history,"History"))
-            arrayList.add(ModelClass("Quiz", R.drawable.geography,"Geography"))
-            arrayList.add(ModelClass("Quiz", R.drawable.constitution,"Constitution"))
-            arrayList.add(ModelClass("Quiz", R.drawable.science,"Science"))
-            arrayList.add(ModelClass("Quiz", R.drawable.economy,"Economic"))
-            arrayList.add(ModelClass("Quiz", R.drawable.computer,"Computer"))
-            arrayList.add(ModelClass("Quiz", R.drawable.reasoning,"Reasoning"))
+            arrayList.add(ModelClass("Quiz", R.drawable.history,"इतिहास"))
+            arrayList.add(ModelClass("Quiz", R.drawable.geography,"भूगोल"))
+            arrayList.add(ModelClass("Quiz", R.drawable.constitution,"संविधान"))
+            arrayList.add(ModelClass("Quiz", R.drawable.science,"विज्ञान"))
+            arrayList.add(ModelClass("Quiz", R.drawable.economy,"आर्थिक"))
+            arrayList.add(ModelClass("Quiz", R.drawable.computer,"कंप्यूटर"))
+            arrayList.add(ModelClass("Quiz", R.drawable.reasoning,"तर्क"))
         }
         else if (data=="Trick"){
-            arrayList.add(ModelClass("Trick", R.drawable.history,"History"))
-            arrayList.add(ModelClass("Trick", R.drawable.geography,"Geography"))
-            arrayList.add(ModelClass("Trick", R.drawable.constitution,"Constitution"))
-            arrayList.add(ModelClass("Trick", R.drawable.science,"Science"))
-            arrayList.add(ModelClass("Trick", R.drawable.economy,"Economic"))
-            arrayList.add(ModelClass("Trick", R.drawable.computer,"Computer"))
-            arrayList.add(ModelClass("Trick", R.drawable.reasoning,"Reasoning"))
-        }
+            arrayList.add(ModelClass("Trick", R.drawable.history,"इतिहास"))
+            arrayList.add(ModelClass("Trick", R.drawable.geography,"भूगोल"))
+            arrayList.add(ModelClass("Trick", R.drawable.constitution,"संविधान"))
+            arrayList.add(ModelClass("Trick", R.drawable.science,"विज्ञान"))
+            arrayList.add(ModelClass("Trick", R.drawable.economy,"आर्थिक"))
+            arrayList.add(ModelClass("Trick", R.drawable.computer,"कंप्यूटर"))
+            arrayList.add(ModelClass("Trick", R.drawable.reasoning,"तर्क"))
 
+
+        }
     }
 }

@@ -48,7 +48,7 @@ class Questions : AppCompatActivity() {
                 else if (minidata=="first world war2"){
             arrayList.add(Modelclass_for_Qustion("Paragraphs world History1","Q1. Paragraphs world History"))
         }
-                else if (minidata=="Paragraphs Indian Geography"){
+                else if (minidata=="सौर मंडल"){
             arrayList.add(Modelclass_for_Qustion("Paragraphs indian Geography1","Q1. Paragraphs Indian Geography"))
         }
                 else if (minidata=="Paragraphs Constitution"){
@@ -72,7 +72,7 @@ class Questions : AppCompatActivity() {
                if (minidata=="Oneline History"){
                    arrayList.add(Modelclass_for_Qustion("Oneline indian History1","Q1. Oneline indian History"))
                }
-               else if (minidata=="Oneline Geography"){
+               else if (minidata=="सौर मंडल"){
                    arrayList.add(Modelclass_for_Qustion("Oneline world History1","Q1. Oneline world History"))
                }
                else if (minidata=="Oneline Constitution"){
@@ -96,7 +96,7 @@ class Questions : AppCompatActivity() {
                if (minidata=="Quiz History"){
                    arrayList.add(Modelclass_for_Qustion("Quiz indian History1","Q1. Quiz indian History"))
                }
-               else if (minidata=="Quiz Geography"){
+               else if (minidata=="सौर मंडल"){
                    arrayList.add(Modelclass_for_Qustion("Quiz world History1","Q1. Quiz world History"))
                }
                else if (minidata=="Quiz Constitution"){
@@ -120,7 +120,7 @@ class Questions : AppCompatActivity() {
                 if (minidata=="Trick History"){
                     arrayList.add(Modelclass_for_Qustion("Trick indian History1","Q1. Trick indian History"))
                 }
-                else if (minidata=="Trick Geography"){
+                else if (minidata=="सौर मंडल"){
                     arrayList.add(Modelclass_for_Qustion("Trick world History1","Q1. Trick world History"))
                 }
                 else if (minidata=="Trick Constitution"){
