@@ -49,11 +49,13 @@ class adapter_for_topics(val context: Context,val arrayList: ArrayList<Model_for
             if (arrayList[position].catacory=="Paragraphs History"){
                 if (position==0){
                     val intent = Intent(context, Questions::class.java)
+                    intent.putExtra("catagory",arrayList[position].catacory)
                     intent.putExtra("minidata", arrayList[0].topic)
                     context.startActivity(intent)
                 }
                 else if (position==1){
                     val intent = Intent(context, Questions::class.java)
+                    intent.putExtra("catagory",arrayList[position].catacory)
                     intent.putExtra("minidata", arrayList[1].topic)
                     context.startActivity(intent)
                 }
@@ -61,6 +63,7 @@ class adapter_for_topics(val context: Context,val arrayList: ArrayList<Model_for
             else if (arrayList[position].catacory=="Paragraphs Geography"){
                 if (position==0){
                     val intent = Intent(context, Questions::class.java)
+                    intent.putExtra("catagory",arrayList[position].catacory)
                     intent.putExtra("minidata", arrayList[0].topic)
                     context.startActivity(intent)
                 }
@@ -68,6 +71,7 @@ class adapter_for_topics(val context: Context,val arrayList: ArrayList<Model_for
             else if (arrayList[position].catacory=="Paragraphs Constitution"){
                 if (position==0){
                     val intent = Intent(context, Questions::class.java)
+                    intent.putExtra("catagory",arrayList[position].catacory)
                     intent.putExtra("minidata", arrayList[0].topic)
                     context.startActivity(intent)
                 }
@@ -75,6 +79,7 @@ class adapter_for_topics(val context: Context,val arrayList: ArrayList<Model_for
             else if (arrayList[position].catacory=="Paragraphs Science"){
                 if (position==0){
                     val intent = Intent(context,Questions::class.java)
+                    intent.putExtra("catagory",arrayList[position].catacory)
                     intent.putExtra("minidata", arrayList[0].topic)
                     context.startActivity(intent)
                 }
@@ -82,6 +87,7 @@ class adapter_for_topics(val context: Context,val arrayList: ArrayList<Model_for
             else if (arrayList[position].catacory=="Paragraphs Economics"){
                 if (position==0){
                     val intent = Intent(context,Questions::class.java)
+                    intent.putExtra("catagory",arrayList[position].catacory)
                     intent.putExtra("minidata", arrayList[0].topic)
                     context.startActivity(intent)
                 }
@@ -89,6 +95,7 @@ class adapter_for_topics(val context: Context,val arrayList: ArrayList<Model_for
             else if (arrayList[position].catacory=="Paragraphs Computer"){
                 if (position==0){
                     val intent = Intent(context,topics::class.java)
+                    intent.putExtra("catagory",arrayList[position].catacory)
                     intent.putExtra("minidata", arrayList[0].topic)
                     context.startActivity(intent)
                 }
@@ -96,6 +103,7 @@ class adapter_for_topics(val context: Context,val arrayList: ArrayList<Model_for
             else if (arrayList[position].catacory=="Paragraphs Reasoning"){
                 if (position==0){
                     val intent = Intent(context,Questions::class.java)
+                    intent.putExtra("catagory",arrayList[position].catacory)
                     intent.putExtra("minidata", arrayList[0].topic)
                     context.startActivity(intent)
                 }
@@ -107,6 +115,7 @@ class adapter_for_topics(val context: Context,val arrayList: ArrayList<Model_for
             if (arrayList[position].catacory=="Oneline History"){
                 if (position==0){
                     val intent = Intent(context, Questions::class.java)
+                    intent.putExtra("catagory",arrayList[position].catacory)
                     intent.putExtra("minidata", arrayList[0].topic)
                     context.startActivity(intent)
                 }
@@ -114,6 +123,7 @@ class adapter_for_topics(val context: Context,val arrayList: ArrayList<Model_for
             else if (arrayList[position].catacory=="Oneline Geography"){
                 if (position==0){
                     val intent = Intent(context, Questions::class.java)
+                    intent.putExtra("catagory",arrayList[position].catacory)
                     intent.putExtra("minidata", arrayList[0].topic)
                     context.startActivity(intent)
                 }
@@ -121,6 +131,7 @@ class adapter_for_topics(val context: Context,val arrayList: ArrayList<Model_for
             else if (arrayList[position].catacory=="Oneline Constitution"){
                   if (position==0){
                       val intent = Intent(context,Questions::class.java)
+                      intent.putExtra("catagory",arrayList[position].catacory)
                       intent.putExtra("minidata", arrayList[0].topic)
                       context.startActivity(intent)
                   }
@@ -128,6 +139,7 @@ class adapter_for_topics(val context: Context,val arrayList: ArrayList<Model_for
             else if (arrayList[position].catacory=="Oneline Science"){
                   if (position==0){
                       val intent = Intent(context,Questions::class.java)
+                      intent.putExtra("catagory",arrayList[position].catacory)
                       intent.putExtra("minidata", arrayList[0].topic)
                       context.startActivity(intent)
                   }
@@ -135,6 +147,7 @@ class adapter_for_topics(val context: Context,val arrayList: ArrayList<Model_for
             else if (arrayList[position].catacory=="Oneline Economics"){
                   if (position==0){
                       val intent = Intent(context,Questions::class.java)
+                      intent.putExtra("catagory",arrayList[position].catacory)
                       intent.putExtra("minidata", arrayList[0].topic)
                       context.startActivity(intent)
                   }
@@ -142,6 +155,7 @@ class adapter_for_topics(val context: Context,val arrayList: ArrayList<Model_for
             else if (arrayList[position].catacory=="Oneline Computer"){
                   if (position==0){
                       val intent = Intent(context,Questions::class.java)
+                      intent.putExtra("catagory",arrayList[position].catacory)
                       intent.putExtra("minidata", arrayList[0].topic)
                       context.startActivity(intent)
                   }
@@ -149,6 +163,7 @@ class adapter_for_topics(val context: Context,val arrayList: ArrayList<Model_for
             else if (arrayList[position].catacory=="Oneline Reasoning"){
                   if (position==0){
                       val intent = Intent(context,Questions::class.java)
+                      intent.putExtra("catagory",arrayList[position].catacory)
                       intent.putExtra("minidata", arrayList[0].topic)
                       context.startActivity(intent)
                   }
@@ -159,6 +174,7 @@ class adapter_for_topics(val context: Context,val arrayList: ArrayList<Model_for
             if (arrayList[position].catacory=="Quiz History"){
                 if (position==0){
                     val intent = Intent(context, Questions::class.java)
+                    intent.putExtra("catagory",arrayList[position].catacory)
                     intent.putExtra("minidata", arrayList[0].topic)
                     context.startActivity(intent)
                 }
@@ -166,6 +182,7 @@ class adapter_for_topics(val context: Context,val arrayList: ArrayList<Model_for
             else if (arrayList[position].catacory=="Quiz Geography"){
                 if (position==0){
                     val intent = Intent(context, Questions::class.java)
+                    intent.putExtra("catagory",arrayList[position].catacory)
                     intent.putExtra("minidata", arrayList[0].topic)
                     context.startActivity(intent)
                 }
@@ -173,6 +190,7 @@ class adapter_for_topics(val context: Context,val arrayList: ArrayList<Model_for
              else if (arrayList[position].catacory=="Quiz Constitution"){
                  if (position==0){
                      val intent = Intent(context,Questions::class.java)
+                     intent.putExtra("catagory",arrayList[position].catacory)
                      intent.putExtra("minidata", arrayList[0].topic)
                      context.startActivity(intent)
                  }
@@ -180,6 +198,7 @@ class adapter_for_topics(val context: Context,val arrayList: ArrayList<Model_for
              else if (arrayList[position].catacory=="Quiz Science"){
                  if (position==0){
                      val intent = Intent(context,Questions::class.java)
+                     intent.putExtra("catagory",arrayList[position].catacory)
                      intent.putExtra("minidata", arrayList[0].topic)
                      context.startActivity(intent)
                  }
@@ -187,6 +206,7 @@ class adapter_for_topics(val context: Context,val arrayList: ArrayList<Model_for
              else if (arrayList[position].catacory=="Quiz Economics"){
                  if (position==0){
                      val intent = Intent(context,Questions::class.java)
+                     intent.putExtra("catagory",arrayList[position].catacory)
                      intent.putExtra("minidata", arrayList[0].topic)
                      context.startActivity(intent)
                  }
@@ -194,6 +214,7 @@ class adapter_for_topics(val context: Context,val arrayList: ArrayList<Model_for
              else if (arrayList[position].catacory=="Quiz Computer"){
                  if (position==0){
                      val intent = Intent(context,Questions::class.java)
+                     intent.putExtra("catagory",arrayList[position].catacory)
                      intent.putExtra("minidata", arrayList[0].topic)
                      context.startActivity(intent)
                  }
@@ -201,6 +222,7 @@ class adapter_for_topics(val context: Context,val arrayList: ArrayList<Model_for
              else if (arrayList[position].catacory=="Quiz Reasoning"){
                  if (position==0){
                      val intent = Intent(context,Questions::class.java)
+                     intent.putExtra("catagory",arrayList[position].catacory)
                      intent.putExtra("minidata", arrayList[0].topic)
                      context.startActivity(intent)
                  }
@@ -211,6 +233,7 @@ class adapter_for_topics(val context: Context,val arrayList: ArrayList<Model_for
             if (arrayList[position].catacory=="Trick History"){
                 if (position==0){
                     val intent = Intent(context, Questions::class.java)
+                    intent.putExtra("catagory",arrayList[position].catacory)
                     intent.putExtra("minidata", arrayList[0].topic)
                     context.startActivity(intent)
                 }
@@ -219,6 +242,7 @@ class adapter_for_topics(val context: Context,val arrayList: ArrayList<Model_for
             else if (arrayList[position].catacory=="Trick Geography"){
                 if (position==0){
                     val intent = Intent(context, Questions::class.java)
+                    intent.putExtra("catagory",arrayList[position].catacory)
                     intent.putExtra("minidata", arrayList[0].topic)
                     context.startActivity(intent)
                 }
@@ -227,6 +251,7 @@ class adapter_for_topics(val context: Context,val arrayList: ArrayList<Model_for
              else if (arrayList[position].catacory=="Trick Constitution"){
                  if (position==0){
                      val intent = Intent(context,Questions::class.java)
+                     intent.putExtra("catagory",arrayList[position].catacory)
                      intent.putExtra("minidata", arrayList[0].topic)
                      context.startActivity(intent)
                  }
@@ -235,6 +260,7 @@ class adapter_for_topics(val context: Context,val arrayList: ArrayList<Model_for
              else if (arrayList[position].catacory=="Trick Science"){
                  if (position==0){
                      val intent = Intent(context,Questions::class.java)
+                     intent.putExtra("catagory",arrayList[position].catacory)
                      intent.putExtra("minidata", arrayList[0].topic)
                      context.startActivity(intent)
                  }
@@ -243,6 +269,7 @@ class adapter_for_topics(val context: Context,val arrayList: ArrayList<Model_for
              else if (arrayList[position].catacory=="Trick Economics"){
                  if (position==0){
                      val intent = Intent(context,Questions::class.java)
+                     intent.putExtra("catagory",arrayList[position].catacory)
                      intent.putExtra("minidata", arrayList[0].topic)
                      context.startActivity(intent)
                  }
@@ -251,6 +278,7 @@ class adapter_for_topics(val context: Context,val arrayList: ArrayList<Model_for
              else if (arrayList[position].catacory=="Trick Computer"){
                  if (position==0){
                      val intent = Intent(context,Questions::class.java)
+                     intent.putExtra("catagory",arrayList[position].catacory)
                      intent.putExtra("minidata", arrayList[0].topic)
                      context.startActivity(intent)
                  }
@@ -259,6 +287,7 @@ class adapter_for_topics(val context: Context,val arrayList: ArrayList<Model_for
              else if (arrayList[position].catacory=="Trick Reasoning"){
                  if (position==0){
                      val intent = Intent(context,Questions::class.java)
+                     intent.putExtra("catagory",arrayList[position].catacory)
                      intent.putExtra("minidata", arrayList[0].topic)
                      context.startActivity(intent)
                  }

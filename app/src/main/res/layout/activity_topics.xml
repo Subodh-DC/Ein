@@ -9,6 +9,14 @@
     android:layout_height="match_parent"
     tools:context=".activity.topics">
 
+    <TextView
+        android:textColor="@color/white"
+        android:background="#034B93"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:text="Topics"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/Recycler_topics"

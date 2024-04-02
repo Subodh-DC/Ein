@@ -7,7 +7,6 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.test.modelclass.Modelclass_for_answer
 import com.example.test.R
 
 class answer : AppCompatActivity() {
@@ -25,7 +24,7 @@ class answer : AppCompatActivity() {
         val question=findViewById<TextView>(R.id.aa1)
         val answer=findViewById<TextView>(R.id.aa2)
 
-        val array= arrayListOf<Modelclass_for_answer>()
+
 
         val data=intent.getStringExtra("question")
 
@@ -129,7 +128,7 @@ class answer : AppCompatActivity() {
         }*/
 
 
-        //Quiz category
+    /*    //Quiz category
         //these all question of Quiz indian History
         if (data=="Q1. Quiz indian History"){
             image.setImageResource(R.drawable.amitabh)
@@ -170,7 +169,7 @@ class answer : AppCompatActivity() {
             image.setImageResource(R.drawable.amitabh)
             question.text="$data"
             answer.text="Ans. Quiz macro Economics"
-        }
+        }*/
 
         //Trick category
         //these all question of Trick indian History

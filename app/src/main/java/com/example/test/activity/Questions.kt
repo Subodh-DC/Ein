@@ -37,107 +37,194 @@ class Questions : AppCompatActivity() {
 
 
                 //get data from miniadapter
+                val catagory=intent.getStringExtra("catagory")
                 val minidata=intent.getStringExtra("minidata")
 
-                //these all data get from miniadapter and show question according to Paragraphs category
-                if (minidata=="first world war"){
-                    arrayList.add(Modelclass_for_Qustion("Paragraphs indian History1","Q1. Paragraphs indian History"))
-                    arrayList.add(Modelclass_for_Qustion("Paragraphs indian History2","Q2. Paragraphs indian History"))
-                    arrayList.add(Modelclass_for_Qustion("Paragraphs indian History3","Q3. Paragraphs indian History"))
-                }
-                else if (minidata=="first world war2"){
-            arrayList.add(Modelclass_for_Qustion("Paragraphs world History1","Q1. Paragraphs world History"))
+        //these all data get from miniadapter and show question according to Paragraphs category
+        if (catagory=="Paragraphs History") {
+            if (minidata == "first world war") {
+                arrayList.add(Modelclass_for_Qustion("Paragraphs indian History1", "Q1. Paragraphs indian History"))
+                arrayList.add(Modelclass_for_Qustion("Paragraphs indian History2", "Q2. Paragraphs indian History"))
+                arrayList.add(Modelclass_for_Qustion("Paragraphs indian History3", "Q3. Paragraphs indian History"))
+            }
+            else if (minidata == "first world war2") {
+                arrayList.add(Modelclass_for_Qustion("Paragraphs world History1", "Q1. Paragraphs world History"))
+            }
+
         }
-                else if (minidata=="सौर मंडल"){
-            arrayList.add(Modelclass_for_Qustion("Paragraphs indian Geography1","Q1. Paragraphs Indian Geography"))
+
+        if (catagory=="Paragraphs Geography") {
+            if (minidata == "सौर मंडल") {
+                arrayList.add(Modelclass_for_Qustion("Paragraphs indian Geography1", "Q1. Paragraphs Indian Geography"))
+            }
+
         }
-                else if (minidata=="Paragraphs Constitution"){
-            arrayList.add(Modelclass_for_Qustion("Paragraphs world Geography1","Q1. Paragraphs world Geography"))
+
+        if (catagory=="Paragraphs Constitution") {
+            if (minidata == "Paragraphs Constitution") {
+                arrayList.add(Modelclass_for_Qustion("Paragraphs world Geography1", "Q1. Paragraphs world Geography"))
+            }
+
         }
-                else if (minidata=="Paragraphs Science"){
-            arrayList.add(Modelclass_for_Qustion("Paragraphs micro Economics1","Q1. Paragraphs micro Economics"))
+
+        if (catagory=="Paragraphs Science") {
+            if (minidata == "Paragraphs Science") {
+                arrayList.add(Modelclass_for_Qustion("Paragraphs micro Economics1", "Q1. Paragraphs micro Economics"))
+            }
         }
-                else if (minidata=="Paragraphs Economics"){
-            arrayList.add(Modelclass_for_Qustion("Paragraphs macro Economics1","Q1. Paragraphs macro Economics"))
+
+        if (catagory=="Paragraphs Economics") {
+            if (minidata == "Paragraphs Economics") {
+                arrayList.add(Modelclass_for_Qustion("Paragraphs macro Economics1", "Q1. Paragraphs macro Economics"))
+            }
         }
-                else if (minidata=="Paragraphs Computer"){
-            arrayList.add(Modelclass_for_Qustion("Paragraphs macro Economics1","Q1. Paragraphs macro Economics"))
+
+        if (catagory=="Paragraphs Computer") {
+            if (minidata == "Paragraphs Computer") {
+                arrayList.add(Modelclass_for_Qustion("Paragraphs macro Economics1", "Q1. Paragraphs macro Economics"))
+            }
         }
-                else if (minidata=="Paragraphs Reasoning"){
-            arrayList.add(Modelclass_for_Qustion("Paragraphs macro Economics1","Q1. Paragraphs macro Economics"))
+
+        if (catagory=="Paragraphs Reasoning") {
+            if (minidata == "Paragraphs Reasoning") {
+                arrayList.add(Modelclass_for_Qustion("Paragraphs macro Economics1", "Q1. Paragraphs macro Economics"))
+            }
         }
 
 
-               //these all data get from miniadapter and show question according to Oneline category
-               if (minidata=="Oneline History"){
-                   arrayList.add(Modelclass_for_Qustion("Oneline indian History1","Q1. Oneline indian History"))
-               }
-               else if (minidata=="सौर मंडल"){
-                   arrayList.add(Modelclass_for_Qustion("Oneline world History1","Q1. Oneline world History"))
-               }
-               else if (minidata=="Oneline Constitution"){
-                   arrayList.add(Modelclass_for_Qustion("Oneline indian Geography1","Q1. Oneline indian Geography"))
-               }
-               else if (minidata=="Oneline Science"){
-                   arrayList.add(Modelclass_for_Qustion("Oneline world Geography1","Q1. Oneline world Geography"))
-               }
-               else if (minidata=="Oneline Economics"){
-                   arrayList.add(Modelclass_for_Qustion("Oneline micro Economics1","Q1. Oneline micro Economics"))
-               }
-               else if (minidata=="Oneline Computer"){
-                   arrayList.add(Modelclass_for_Qustion("Oneline macro Economics1","Q1. Oneline macro Economics"))
-               }
-               else if (minidata=="Oneline Reasoning"){
-                   arrayList.add(Modelclass_for_Qustion("Oneline macro Economics1","Q1. Oneline macro Economics"))
-               }
+
+        //these all data get from miniadapter and show question according to Oneline category
+        if (catagory=="Oneline History") {
+            if (minidata == "Oneline History") {
+                arrayList.add(Modelclass_for_Qustion("Oneline indian History1", "Q1. Oneline indian History"))
+            }
+        }
+
+        if (catagory=="Oneline Geography") {
+            if (minidata == "सौर मंडल") {
+                arrayList.add(Modelclass_for_Qustion("Oneline world History1", "Q1. Oneline world History"))
+            }
+        }
+
+        if (catagory=="Oneline Constitution") {
+            if (minidata == "Oneline Constitution") {
+                arrayList.add(Modelclass_for_Qustion("Oneline indian Geography1", "Q1. Oneline indian Geography"))
+            }
+        }
+
+        if (catagory=="Oneline Science") {
+            if (minidata == "Oneline Science") {
+                arrayList.add(Modelclass_for_Qustion("Oneline world Geography1", "Q1. Oneline world Geography"))
+            }
+        }
+
+        if (catagory=="Oneline Economics") {
+            if (minidata == "Oneline Economics") {
+                arrayList.add(Modelclass_for_Qustion("Oneline micro Economics1", "Q1. Oneline micro Economics"))
+            }
+        }
+
+        if (catagory=="Oneline Computer") {
+            if (minidata == "Oneline Computer") {
+                arrayList.add(Modelclass_for_Qustion("Oneline macro Economics1", "Q1. Oneline macro Economics"))
+            }
+        }
+
+        if (catagory=="Oneline Reasoning") {
+            if (minidata == "Oneline Reasoning") {
+                arrayList.add(Modelclass_for_Qustion("Oneline macro Economics1", "Q1. Oneline macro Economics"))
+            }
+        }
 
 
-               //these all data get from miniadapter and show question according to Quiz category
-               if (minidata=="Quiz History"){
-                   arrayList.add(Modelclass_for_Qustion("Quiz indian History1","Q1. Quiz indian History"))
-               }
-               else if (minidata=="सौर मंडल"){
-                   arrayList.add(Modelclass_for_Qustion("Quiz world History1","Q1. Quiz world History"))
-               }
-               else if (minidata=="Quiz Constitution"){
-                   arrayList.add(Modelclass_for_Qustion("Quiz indian Geography1","Q1. Quiz indian Geography"))
-               }
-               else if (minidata=="Quiz Science"){
-                   arrayList.add(Modelclass_for_Qustion("Quiz world Geography1","Q1. Quiz world Geography"))
-               }
-               else if (minidata=="Quiz Economics"){
-                   arrayList.add(Modelclass_for_Qustion("Quiz micro Economics1","Q1. Quiz micro Economics"))
-               }
-               else if (minidata=="Quiz Computer"){
-                   arrayList.add(Modelclass_for_Qustion("Quiz macro Economics1","Q1. Quiz macro Economics"))
-               }
-               else if (minidata=="Quiz Reasoning"){
-                   arrayList.add(Modelclass_for_Qustion("Quiz macro Economics1","Q1. Quiz macro Economics"))
-               }
+        //these all data get from miniadapter and show question according to Quiz category
+        if (catagory=="Quiz History") {
+            if (minidata == "Quiz History") {
+                arrayList.add(Modelclass_for_Qustion("Quiz indian History1", "Q1. Quiz indian History"))
+            }
+        }
+
+        if (catagory=="Quiz Geography") {
+            if (minidata == "सौर मंडल") {
+                arrayList.add(Modelclass_for_Qustion("Quiz world History1", "Q1. Quiz world History"))
+            }
+        }
+
+        if (catagory=="Quiz Constitution") {
+            if (minidata == "Quiz Constitution") {
+                arrayList.add(Modelclass_for_Qustion("Quiz indian Geography1", "Q1. Quiz indian Geography"))
+            }
+        }
+
+        if (catagory=="Quiz Science") {
+            if (minidata == "Quiz Science") {
+                arrayList.add(Modelclass_for_Qustion("Quiz world Geography1", "Q1. Quiz world Geography"))
+            }
+        }
+
+        if (catagory=="Quiz Economics") {
+            if (minidata == "Quiz Economics") {
+                arrayList.add(Modelclass_for_Qustion("Quiz micro Economics1", "Q1. Quiz micro Economics"))
+            }
+        }
+
+        if (catagory=="Quiz Computer") {
+            if (minidata == "Quiz Computer") {
+                arrayList.add(Modelclass_for_Qustion("Quiz macro Economics1", "Q1. Quiz macro Economics"))
+            }
+        }
+
+        if (catagory=="Quiz Reasoning") {
+            if (minidata == "Quiz Reasoning") {
+                arrayList.add(Modelclass_for_Qustion("Quiz Reasoning1", "Q1. Quiz Reasoning"))
+            }
+        }
 
 
-                //these all data get from miniadapter and show question according to Trick category
-                if (minidata=="Trick History"){
-                    arrayList.add(Modelclass_for_Qustion("Trick indian History1","Q1. Trick indian History"))
-                }
-                else if (minidata=="सौर मंडल"){
-                    arrayList.add(Modelclass_for_Qustion("Trick world History1","Q1. Trick world History"))
-                }
-                else if (minidata=="Trick Constitution"){
-                    arrayList.add(Modelclass_for_Qustion("Trick indian Geography1","Q1. Trick indian Geography"))
-                }
-                else if (minidata=="Trick Science"){
-                    arrayList.add(Modelclass_for_Qustion("Trick world Geography1","Q1. Trick world Geography"))
-                }
-                else if (minidata=="Trick Economics"){
-                    arrayList.add(Modelclass_for_Qustion("Trick micro Economics1","Q1. Trick micro Economics"))
-                }
-                else if (minidata=="Trick Computer"){
-                    arrayList.add(Modelclass_for_Qustion("Trick macro Economics1","Q1. Trick macro Economics"))
-                }
-                else if (minidata=="Trick Reasoning"){
-                    arrayList.add(Modelclass_for_Qustion("Trick macro Economics1","Q1. Trick macro Economics"))
-                }
+
+        //these all data get from miniadapter and show question according to Trick category
+        if (catagory=="Trick History") {
+            if (minidata == "Trick History") {
+                arrayList.add(Modelclass_for_Qustion("Trick indian History1", "Q1. Trick indian History"))
+            }
+        }
+
+        if (catagory=="Trick Geography") {
+            if (minidata == "सौर मंडल") {
+                arrayList.add(Modelclass_for_Qustion("Trick world History1", "Q1. Trick world History"))
+            }
+        }
+
+        if (catagory=="Trick Constitution") {
+            if (minidata == "Trick Constitution") {
+                arrayList.add(Modelclass_for_Qustion("Trick indian Geography1", "Q1. Trick indian Geography"))
+            }
+        }
+
+        if (catagory=="Trick Science") {
+            if (minidata == "Trick Science") {
+                arrayList.add(Modelclass_for_Qustion("Trick world Geography1", "Q1. Trick world Geography"))
+            }
+        }
+
+        if (catagory=="Trick Economics") {
+            if (minidata == "Trick Economics") {
+                arrayList.add(Modelclass_for_Qustion("Trick micro Economics1", "Q1. Trick micro Economics"))
+            }
+        }
+
+        if (catagory=="Trick Computer") {
+            if (minidata == "Trick Computer") {
+                arrayList.add(Modelclass_for_Qustion("Trick macro Economics1", "Q1. Trick macro Economics"))
+            }
+        }
+
+        if (catagory=="Trick Reasoning") {
+            if (minidata == "Trick Reasoning") {
+                arrayList.add(Modelclass_for_Qustion("Trick macro Economics1", "Q1. Trick macro Economics"))
+            }
+        }
+
 
     }
 }
