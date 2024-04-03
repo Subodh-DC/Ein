@@ -27,15 +27,6 @@
                 </Key>
               </deviceKey>
             </Target>
-            <Target>
-              <type value="RUNNING_DEVICE_TARGET" />
-              <deviceKey>
-                <Key>
-                  <type value="SERIAL_NUMBER" />
-                  <value value="RZ8N719DGWE" />
-                </Key>
-              </deviceKey>
-            </Target>
           </runningDeviceTargetsSelectedWithDialog>
         </State>
       </entry>
