@@ -46,6 +46,7 @@ class Questions : AppCompatActivity() {
                 arrayList.add(Modelclass_for_Qustion("Paragraphs indian History1", "Q1. Paragraphs indian History"))
                 arrayList.add(Modelclass_for_Qustion("Paragraphs indian History2", "Q2. Paragraphs indian History"))
                 arrayList.add(Modelclass_for_Qustion("Paragraphs indian History3", "Q3. Paragraphs indian History"))
+                arrayList.add(Modelclass_for_Qustion("Paragraphs indian History4", "Q4. Paragraphs indian History"))
             }
             else if (minidata == "first world war2") {
                 arrayList.add(Modelclass_for_Qustion("Paragraphs world History1", "Q1. Paragraphs world History"))
@@ -55,7 +56,10 @@ class Questions : AppCompatActivity() {
 
         if (catagory=="Paragraphs Geography") {
             if (minidata == "सौर मंडल") {
-                arrayList.add(Modelclass_for_Qustion("Paragraphs indian Geography1", "Q1. Paragraphs Indian Geography"))
+                arrayList.add(Modelclass_for_Qustion("Paragraphs Geography1", "प्रश्न 1: हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?"))
+                arrayList.add(Modelclass_for_Qustion("Paragraphs Geography2", "प्रश्न 2: हमारे सौर मंडल का सबसे गर्म ग्रह कौन सा है?"))
+                arrayList.add(Modelclass_for_Qustion("Paragraphs Geography3", "प्रश्न 3: किस ग्रह के चंद्रमा सबसे अधिक हैं?"))
+                arrayList.add(Modelclass_for_Qustion("Paragraphs Geography4", "प्रश्न 4: शनि के छल्लों की संरचना क्या है?"))
             }
 
         }

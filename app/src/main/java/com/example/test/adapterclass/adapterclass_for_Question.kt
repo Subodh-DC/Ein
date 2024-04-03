@@ -36,7 +36,7 @@ class adapterclass_for_Question(val context: Context, val arrayList: ArrayList<M
         holder.designLayout.setOnClickListener {
 
             //below  paragraph question
-            //Indian History
+            //paragraph History
             if (arrayList[position].minidata == "Paragraphs indian History1") {
                 val intent = Intent(context, answer::class.java)
                 intent.putExtra("question", arrayList[position].question)
@@ -52,16 +52,36 @@ class adapterclass_for_Question(val context: Context, val arrayList: ArrayList<M
                 intent.putExtra("question", arrayList[position].question)
                 context.startActivity(intent)
             }
-
-            //World History
-            else if (arrayList[position].minidata == "Paragraphs world History1") {
+            else if (arrayList[position].minidata == "Paragraphs indian History4") {
                 val intent = Intent(context, answer::class.java)
                 intent.putExtra("question", arrayList[position].question)
                 context.startActivity(intent)
             }
 
-            //indian Geography
-            else if (arrayList[position].minidata == "Paragraphs indian Geography1") {
+           /* //World History
+            else if (arrayList[position].minidata == "Paragraphs world History1") {
+                val intent = Intent(context, answer::class.java)
+                intent.putExtra("question", arrayList[position].question)
+                context.startActivity(intent)
+            }*/
+
+            //paragraph Geography
+            else if (arrayList[position].minidata == "Paragraphs Geography1") {
+                val intent = Intent(context, answer::class.java)
+                intent.putExtra("question", arrayList[position].question)
+                context.startActivity(intent)
+            }
+            else if (arrayList[position].minidata == "Paragraphs Geography2") {
+                val intent = Intent(context, answer::class.java)
+                intent.putExtra("question", arrayList[position].question)
+                context.startActivity(intent)
+            }
+            else if (arrayList[position].minidata == "Paragraphs Geography3") {
+                val intent = Intent(context, answer::class.java)
+                intent.putExtra("question", arrayList[position].question)
+                context.startActivity(intent)
+            }
+            else if (arrayList[position].minidata == "Paragraphs Geography4") {
                 val intent = Intent(context, answer::class.java)
                 intent.putExtra("question", arrayList[position].question)
                 context.startActivity(intent)

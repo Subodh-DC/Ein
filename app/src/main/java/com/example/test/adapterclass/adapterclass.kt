@@ -28,8 +28,8 @@ class adapterclass(val context: Context,val arrayList: ArrayList<ModelClass>):Re
 
         holder.image.setImageResource(arrayList[position].image)
         holder.text.text=arrayList[position].text
-        holder.designLayout.setOnClickListener{
 
+        holder.designLayout.setOnClickListener{
 
             if (arrayList[position].homecatacory=="Paragraphs"){
                 if (position==0){

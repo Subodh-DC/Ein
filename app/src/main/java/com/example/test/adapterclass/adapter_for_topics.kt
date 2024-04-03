@@ -59,6 +59,12 @@ class adapter_for_topics(val context: Context,val arrayList: ArrayList<Model_for
                     intent.putExtra("minidata", arrayList[1].topic)
                     context.startActivity(intent)
                 }
+                else if (position==2){
+                    val intent = Intent(context, Questions::class.java)
+                    intent.putExtra("catagory",arrayList[position].catacory)
+                    intent.putExtra("minidata", arrayList[2].topic)
+                    context.startActivity(intent)
+                }
             }
             else if (arrayList[position].catacory=="Paragraphs Geography"){
                 if (position==0){

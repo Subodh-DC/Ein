@@ -32,5 +32,6 @@ class showhomepageimage : AppCompatActivity() {
         if (imagedata != null) {
             image.setImageResource(imagedata)
         }
+
     }
 }
