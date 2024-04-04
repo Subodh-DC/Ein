@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/Ask"
+        android:icon="@drawable/inbox"
+        android:title="Ask Question" />
+    <item
+        android:id="@+id/Rating"
+        android:icon="@drawable/inbox"
+        android:title="Rating" />
+    <item
+        android:id="@+id/Share"
+        android:icon="@drawable/inbox"
+        android:title="Share" />
+
+</menu>
