@@ -42,7 +42,7 @@ class Questions : AppCompatActivity() {
 
         //these all data get from miniadapter and show question according to Paragraphs category
         if (catagory=="Paragraphs History") {
-            if (minidata == "first world war") {
+            if (minidata == "अमेरिका का स्वतंत्रता संग्राम") {
                 arrayList.add(Modelclass_for_Qustion("Paragraphs indian History1", "Q1. Paragraphs indian History"))
                 arrayList.add(Modelclass_for_Qustion("Paragraphs indian History2", "Q2. Paragraphs indian History"))
                 arrayList.add(Modelclass_for_Qustion("Paragraphs indian History3", "Q3. Paragraphs indian History"))
