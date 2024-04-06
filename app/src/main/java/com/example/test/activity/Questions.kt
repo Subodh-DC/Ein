@@ -230,7 +230,5 @@ class Questions : AppCompatActivity() {
         }
 
 
-
-
     }
 }
