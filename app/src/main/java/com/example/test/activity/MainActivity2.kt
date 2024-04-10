@@ -1,15 +1,13 @@
 package com.example.test.activity
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-import com.example.test.modelclass.ModelClass
 import com.example.test.R
-import com.example.test.adapterclass.adapterclass
 
 class MainActivity2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,56 +20,69 @@ class MainActivity2 : AppCompatActivity() {
             insets
         }
 
-        val arrayList= arrayListOf<ModelClass>()
-
-        val adapterclass= adapterclass(this,arrayList)
-
-        val recyclerView=findViewById<RecyclerView>(R.id.recyclerview)
-
-        recyclerView.adapter=adapterclass
-        recyclerView.layoutManager=LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false)
-
 
         //get data from home page
         val data = intent.extras?.getString("homepagedata")
 
         if (data == "Paragraphs") {
-            arrayList.add(ModelClass("Paragraphs", R.drawable.history, "इतिहास"))
-            arrayList.add(ModelClass("Paragraphs", R.drawable.geography, "भूगोल"))
-            arrayList.add(ModelClass("Paragraphs", R.drawable.constitution, "संविधान"))
-            arrayList.add(ModelClass("Paragraphs", R.drawable.science, "विज्ञान"))
-            arrayList.add(ModelClass("Paragraphs", R.drawable.economy, "आर्थिक"))
-            arrayList.add(ModelClass("Paragraphs", R.drawable.computer, "कंप्यूटर"))
-            arrayList.add(ModelClass("Paragraphs", R.drawable.reasoning, "तर्क"))
+            gototopics(data)
         }
         else if (data=="Oneline"){
-            arrayList.add(ModelClass("Oneline", R.drawable.history,"इतिहास"))
-            arrayList.add(ModelClass("Oneline", R.drawable.geography,"भूगोल"))
-            arrayList.add(ModelClass("Oneline", R.drawable.constitution,"संविधान"))
-            arrayList.add(ModelClass("Oneline", R.drawable.science,"विज्ञान"))
-            arrayList.add(ModelClass("Oneline", R.drawable.economy,"आर्थिक"))
-            arrayList.add(ModelClass("Oneline", R.drawable.computer,"कंप्यूटर"))
-            arrayList.add(ModelClass("Oneline", R.drawable.reasoning,"तर्क"))
+            gototopics(data)
         }
         else if (data=="Quiz"){
-            arrayList.add(ModelClass("Quiz", R.drawable.history,"इतिहास"))
-            arrayList.add(ModelClass("Quiz", R.drawable.geography,"भूगोल"))
-            arrayList.add(ModelClass("Quiz", R.drawable.constitution,"संविधान"))
-            arrayList.add(ModelClass("Quiz", R.drawable.science,"विज्ञान"))
-            arrayList.add(ModelClass("Quiz", R.drawable.economy,"आर्थिक"))
-            arrayList.add(ModelClass("Quiz", R.drawable.computer,"कंप्यूटर"))
-            arrayList.add(ModelClass("Quiz", R.drawable.reasoning,"तर्क"))
+            gototopics(data)
         }
         else if (data=="Trick"){
-            arrayList.add(ModelClass("Trick", R.drawable.history,"इतिहास"))
-            arrayList.add(ModelClass("Trick", R.drawable.geography,"भूगोल"))
-            arrayList.add(ModelClass("Trick", R.drawable.constitution,"संविधान"))
-            arrayList.add(ModelClass("Trick", R.drawable.science,"विज्ञान"))
-            arrayList.add(ModelClass("Trick", R.drawable.economy,"आर्थिक"))
-            arrayList.add(ModelClass("Trick", R.drawable.computer,"कंप्यूटर"))
-            arrayList.add(ModelClass("Trick", R.drawable.reasoning,"तर्क"))
+            gototopics(data)
+
+        }
+    }
+
+    private fun gototopics(data:String) {
+        val his=findViewById<ImageView>(R.id.his_cata)
+        val geo=findViewById<ImageView>(R.id.geo_cata)
+        val cons=findViewById<ImageView>(R.id.cons_cata)
+        val sci=findViewById<ImageView>(R.id.sci_cata)
+        val eco=findViewById<ImageView>(R.id.eco_cata)
+        val comp=findViewById<ImageView>(R.id.copm_cata)
+        val reg=findViewById<ImageView>(R.id.reg_cta)
 
 
+        his.setOnClickListener {
+            val intent = Intent(this, topics::class.java)
+            intent.putExtra("data", "$data History")
+            startActivity(intent)
+        }
+        geo.setOnClickListener {
+            val intent = Intent(this, topics::class.java)
+            intent.putExtra("data", "$data Geography")
+            startActivity(intent)
+        }
+        cons.setOnClickListener {
+            val intent = Intent(this, topics::class.java)
+            intent.putExtra("data", "$data Constitution")
+            startActivity(intent)
+        }
+        sci.setOnClickListener {
+            val intent = Intent(this, topics::class.java)
+            intent.putExtra("data", "$data Science")
+            startActivity(intent)
+        }
+        eco.setOnClickListener {
+            val intent = Intent(this, topics::class.java)
+            intent.putExtra("data", "$data Economics")
+            startActivity(intent)
+        }
+        comp.setOnClickListener {
+            val intent = Intent(this, topics::class.java)
+            intent.putExtra("data", "$data Computer")
+            startActivity(intent)
+        }
+        reg.setOnClickListener {
+            val intent = Intent(this, topics::class.java)
+            intent.putExtra("data", "$data Reasoning")
+            startActivity(intent)
         }
     }
 }

@@ -4,12 +4,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:background="@color/black"
+    android:background="@drawable/spl"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activity.splashscreen">
 
-    <ImageView
+    <!--<ImageView
         android:layout_marginTop="150dp"
         android:id="@+id/simage"
         android:layout_width="115dp"
@@ -38,6 +38,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
-    </TextView>
+    </TextView>-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
