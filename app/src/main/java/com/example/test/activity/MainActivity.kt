@@ -28,10 +28,10 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        val button=findViewById<Button>(R.id.himageButton)
-        val button1=findViewById<Button>(R.id.himageButton1)
-        val button2=findViewById<Button>(R.id.himageButton2)
-        val button3=findViewById<Button>(R.id.himageButton3)
+        val button=findViewById<ImageView>(R.id.himageButton)
+        val button1=findViewById<ImageView>(R.id.himageButton1)
+        val button2=findViewById<ImageView>(R.id.himageButton2)
+        val button3=findViewById<ImageView>(R.id.himageButton3)
         val imageView=findViewById<ImageView>(R.id.himage)
         val quotes=findViewById<TextView>(R.id.quotes)
         val hamburger=findViewById<ImageView>(R.id.hamburger_icon)
