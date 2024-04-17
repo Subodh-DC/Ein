@@ -1,9 +1,11 @@
 package com.example.test.activity
 
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import android.widget.VideoView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -21,9 +23,23 @@ class splashscreen : AppCompatActivity() {
             insets
         }
 
-        Handler(Looper.getMainLooper()).postDelayed({
+     /*   Handler(Looper.getMainLooper()).postDelayed({
             startActivity(Intent(this, MainActivity::class.java))
             finish()
         },3000)
+*/
+
+        val videoView = findViewById<VideoView>(R.id.videoView)
+        val videoPath = "android.resource://" + packageName + "/" + R.raw.splash_s
+        val videoUri = Uri.parse(videoPath)
+        videoView.setVideoURI(videoUri)
+
+        videoView.setOnCompletionListener {
+            // Navigate to the next activity when the video finishes
+            startActivity(Intent(this, MainActivity::class.java))
+            finish()
+        }
+
+        videoView.start()
     }
 }

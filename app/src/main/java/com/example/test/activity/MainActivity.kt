@@ -46,25 +46,30 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, "Notification", Toast.LENGTH_SHORT).show()
         }
 
+
         button.setOnClickListener {
+            Toast.makeText(this, "para", Toast.LENGTH_SHORT).show()
             val intent=Intent(this, MainActivity2::class.java)
             intent.putExtra("homepagedata","Paragraphs")
             startActivity(intent)
         }
 
         button1.setOnClickListener {
+            Toast.makeText(this, "one", Toast.LENGTH_SHORT).show()
             val intent=Intent(this, MainActivity2::class.java)
             intent.putExtra("homepagedata","Oneline")
             startActivity(intent)
         }
 
         button2.setOnClickListener {
+            Toast.makeText(this, "quiz", Toast.LENGTH_SHORT).show()
             val intent=Intent(this, MainActivity2::class.java)
             intent.putExtra("homepagedata","Quiz")
             startActivity(intent)
         }
 
         button3.setOnClickListener {
+            Toast.makeText(this, "trick", Toast.LENGTH_SHORT).show()
             val intent=Intent(this, MainActivity2::class.java)
             intent.putExtra("homepagedata","Trick")
             startActivity(intent)

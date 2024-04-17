@@ -1,6 +1,7 @@
 package com.example.test.activity
 
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -11,8 +12,11 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.test.modelclass.Modelclass_for_Qustion
 import com.example.test.R
 import com.example.test.adapterclass.adapterclass_for_Question
+import com.example.test.interfac.RecyclerViewClick
+import com.example.test.modelclass.Model_for_topics
 
-class Questions : AppCompatActivity() {
+class Questions : AppCompatActivity(),RecyclerViewClick {
+    var arrayList= arrayListOf<Modelclass_for_Qustion>()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -27,10 +31,10 @@ class Questions : AppCompatActivity() {
         val Recyclerview=findViewById<RecyclerView>(R.id.Recycler_question)
 
 
-        val arrayList= arrayListOf<Modelclass_for_Qustion>()
+         arrayList= arrayListOf<Modelclass_for_Qustion>()
 
 
-        val adapterclass_for_Question= adapterclass_for_Question(this,arrayList)
+        val adapterclass_for_Question= adapterclass_for_Question(this,arrayList,this)
 
         Recyclerview.adapter=adapterclass_for_Question
         Recyclerview.layoutManager=LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false)
@@ -43,10 +47,10 @@ class Questions : AppCompatActivity() {
         //these all data get from miniadapter and show question according to Paragraphs category
         if (catagory=="Paragraphs History") {
             if (minidata == "अमेरिका का स्वतंत्रता संग्राम") {
-                arrayList.add(Modelclass_for_Qustion("Paragraphs indian History1", "Q1. Paragraphs indian History"))
-                arrayList.add(Modelclass_for_Qustion("Paragraphs indian History2", "Q2. Paragraphs indian History"))
-                arrayList.add(Modelclass_for_Qustion("Paragraphs indian History3", "Q3. Paragraphs indian History"))
-                arrayList.add(Modelclass_for_Qustion("Paragraphs indian History4", "Q4. Paragraphs indian History"))
+                arrayList.add(Modelclass_for_Qustion("Paragraphs indian History1", "Paragraphs indian History"))
+                arrayList.add(Modelclass_for_Qustion("Paragraphs indian History2", "Paragraphs indian History"))
+                arrayList.add(Modelclass_for_Qustion("Paragraphs indian History3", "Paragraphs indian History"))
+                arrayList.add(Modelclass_for_Qustion("Paragraphs indian History4", "Paragraphs indian History"))
             }
             else if (minidata == "first world war2") {
                 arrayList.add(Modelclass_for_Qustion("Paragraphs world History1", "Q1. Paragraphs world History"))
@@ -230,5 +234,11 @@ class Questions : AppCompatActivity() {
         }
 
 
+    }
+
+    override fun onIntemClicked(position: Int) {
+        val intent = Intent(this, answer::class.java)
+        intent.putExtra("question", arrayList[position].question)
+        startActivity(intent)
     }
 }
